@@ -196,7 +196,7 @@ function countdownAndConfetti() {
             // Hide the button
             btn.style.display = "none";
             // Display "THE Hackathon begins" text
-            countdownText.textContent = "- The 30 hours of Hackathon phase begins....";
+            countdownText.textContent = "- The 30 hours of Hackathon phase begins...";
             // Trigger confetti animation
             makeConfetti();
           // Adjust delay as needed
