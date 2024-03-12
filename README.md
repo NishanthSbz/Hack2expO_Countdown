@@ -1,1 +1,1 @@
-# Hack2expO_Countdown
+# Hack2expO_Countdown is ready for hackathon
