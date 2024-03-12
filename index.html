@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>PYEXPO'24</title>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <!-- Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+  <!-- Nivo Lightbox -->
+  <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <link rel="shortcut icon" type="image/jpg" href="assets/img/sponsors/KiTE-Logo.png" />
+
+  <!-- scripts -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <script type="module" src="https://cdn.skypack.dev/canvas-confetti"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/confetti.js"></script>
+
+  <!-- script for devfolio -->
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+      <div id="nav-container" class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a href="#" class="navbar-brand"><img id="nav-logo" src="assets/img/background/PyExpoLogo.png"
+            alt="PyExpo-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="lni-menu"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-5 w-100 justify-content-center">
+            <li class="nav-item "> 
+              <a class="nav-link" > 
+                 HACK2EXPO Countdown 
+            </li>
+           
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Area Start -->
+    <div id="hero-area" class="hero-area-bg">
+      <div class="overlay"></divx >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-sm-12">
+            <div class="contents text-center">
+              <!-- <div class="icon">
+                  <i class="lni-mic"></i>
+                </div> -->
+
+              <!-- <h2 class="head-title">TSEC Hacks</h2>
+                <p class="banner-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, nobis nesciunt atque perferendis, ipsa doloremque deserunt cum qui.</p> -->
+
+              <img id="hero-image" style="margin: 10% auto;" src="assets/img//background/PyExpoLogo.png" width="212px"
+                height="210px" alt="PyExpo-logo">
+
+              <!-- <div class="banner-btn">
+                <a href="#" id="hero-register" class="btn btn-common">Register
+                  Now ! <span class="lnr lnr-arrow-right"></span></a>
+              </div> -->
+              <!-- devfolio button -->
+              <!-- <div class="apply-button" data-hackathon-slug="py-expo2k24" data-button-theme="light"
+                style="height: 44px; width: 312px;position: relative;margin: 30px auto;"></div> -->
+              <!-- <div class="button-container">
+                  <div class="apply-button" data-hackathon-slug="py-expo2k24" data-button-theme="light"></div>
+                  <a href="https://discord.gg/bHVNmzpkzX" target="_blank" class="discord-button">
+                      <img src="assets\img\discord_logo1.png" alt="Discord Icon" class="discord-icon">
+                      Join Discord
+                  </a>
+              </div>
+               -->
+              <p class="banner-info">
+                <span style="color: #E3B35A; font-size: xx-large;">HACK2EXPO </span> <span id="countdown-text" style="font-size: xx-large;"></span>
+                <!--on 13<sup> th</sup> March @ 9 AM || ends on 14 <sup>th</sup> March @ 3 PM... -->
+              </p>
+              <button id="startTimerButton" onclick="MyDummyClicker()">START ></button>
+              <script>
+                // Get the total hours as input from the user
+                var totalHours = 30.001; // Example: 30 hours
+
+                // Convert total hours to milliseconds
+                var countdownTimeInMillis = totalHours * 60 * 60 * 1000;
+
+                // Set the countdown end time
+
+                function CountdownUpdate() {
+                  // Get the current date and time
+
+                  var now = new Date().getTime();
+
+                  // Calculate the time remaining
+                  var distance = globalThis.countDownDate - now;
+
+                  // Calculate hours, minutes, and seconds
+                  var hours = Math.floor(distance / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                  // Display the timer in the #timer div
+                  var timerElement = document.getElementById('timer');
+                  if (distance >= 0) {
+                    timerElement.innerHTML = hours + ' hours  ' + minutes + ' mins  ' + seconds + ' sec ';
+                  } else {
+                    clearInterval(x);
+                    timerElement.innerHTML = " Times Up! HACK2EXPO Ended Successfully.";
+                    timerElement.style.fontSize = '30px'; // Adjust font size for the message
+                  }
+                }
+
+                function MyDummyClicker() {
+                  globalThis.countDownDate = new Date().getTime() + countdownTimeInMillis;
+
+                  // Update the timer every second
+                  var x = setInterval(CountdownUpdate, 1000);
+                }
+
+              </script>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <section id="count">
+        <div class="count-wrapper text-center">
+          <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
+            <div id="timer" style="font-family:'Orbitron', sans-serif;"><span style="font-size: 35px;color: #2b72ad;">30 Hours Countdown will start when the above button is Clicked</span></div>
+
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- <section id="count">
+        <div class="count-wrapper text-center">
+          <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
+            <div id="clock" class="time-count">
+
+              <div class="count-item-main">
+                <h3 class="count-item" id="count-days">%d</h3>
+                <h4 style="color:#2b72ad;font-family:'Orbitron', sans-serif;font-family:'digital-clock-font';
+   font-variant-caps:small-caps;">Days</h4>
+              </div>
+              <div class="count-item-main">
+                <h3 class="count-item" id="count-hours">%h</h3>
+                <h4 style="color:#2b72ad;font-family:'Orbitron', sans-serif;font-family:'digital-clock-font';
+   font-variant-caps:small-caps;">Hours</h4>
+              </div>
+              <div class="count-item-main">
+                <h3 class="count-item" id="count-mins">%m</h3>
+                <h4 style="color:#2b72ad;font-family:'Orbitron', sans-serif;font-family:'digital-clock-font';
+   font-variant-caps:small-caps;">Minutes</h4>
+              </div>
+              <div class="count-item-main">
+                <h3 class="count-item" id="count-sec">%s</h3>
+                <h4 style="color:#2b72ad;font-family:'Orbitron', sans-serif;font-family:'digital-clock-font';
+   font-variant-caps:small-caps;">Seconds</h4>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section> -->
+    </div>
+    <!-- Hero Area End -->
+
+  </header>
+  <!-- Header Area wrapper End -->
+
+  <!-- Count Bar Start -->
+
+  <!-- Count Bar End -->
+
+  
+  <div id="preloader">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
