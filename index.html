@@ -45,6 +45,15 @@
 
   <!-- script for devfolio -->
   <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+  <script>
+    window.addEventListener('beforeunload', function (e) {
+    // Cancel the event
+    e.preventDefault();
+    // Chrome requires returnValue to be set
+    e.returnValue = '';
+});
+
+</script>
 
 </head>
 
