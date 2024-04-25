@@ -3239,9 +3239,9 @@ footer {
   margin-top: -35px;
   padding: 25px 0;
   position: relative;
-  background-color: #000000;
-  border-top: 3px solid #E3B35A ;
-  border-bottom:  3px solid #E3B35A ;
+  background-color: #00000096;
+  border-top: 4px solid #F04935 ;
+  border-bottom:  4px solid #F04935 ;
   display: flex;
   width: auto;
   justify-content: center !important;
@@ -3452,10 +3452,9 @@ footer {
 ========================================================================== */
 .hero-area-bg {
   /* background: url(../img/hero-area.jpg) no-repeat; */
-  background: url(../img/background/pyexpo_landingpg9.png ) no-repeat center center /*fixed*/;
+  background: url(../img/background/siht2.png) no-repeat center center;
   background-size: cover;
-  background-position: center center;
-  height: 110vh;
+  height: 110vh; /* You can adjust this value as needed */
 }
 
 #hero-area {
@@ -3476,13 +3475,13 @@ footer {
 }
 
 img#nav-logo {
-  width: 82px;
+  width: 200px;
   height: auto;
-  padding: 3px;
+  padding: 10px;
 }
 
 #hero-area .contents {
-  padding: 410px 21px 200px;
+  padding: 350px 21px 200px;
 }
 
 #hero-area .contents .icon {
@@ -3501,7 +3500,7 @@ img#nav-logo {
   font-size: 18px;
   font-style: italic;
   margin-bottom: 20px;
-  line-height: 24px;
+  line-height: 30px;
   color: #fff;
   margin-top: 37px;
 }
@@ -3537,7 +3536,7 @@ img#nav-logo {
  /* Style the timer text */
  #timer {
    font-size: 65px;
-   color: #2b72ad;
+   color: #fea101;
    /* text-shadow: -1px 0 #000, 0 1px #fff, 1px 0 #fff, 0 -1px #000; */
    margin: 0 0 0 20px;   
    font-family:'digital-clock-font';
@@ -3632,19 +3631,16 @@ div#clock {
 }
 @media (max-width: 798px) {
   .hero-area-bg {
-    /* background: url(../img/hero-area.jpg) no-repeat; */
-    background: url(../img/background/onlybg6.png) no-repeat !important;
-    background-size: cover !important;
-    background-position: center;
-    height: 100vh;
+    background: url(../img/background/siht3.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Adjust the height as needed */
   }
   #timer {
     font-size: 25px;
     font-weight: 100;
     }
 
-  #hero-register {
-  }
+  
   #hero-image {
     display: block;
   }
@@ -3654,13 +3650,10 @@ div#clock {
 }
 @media (max-width: 415px) {
   .hero-area-bg {
-    /* background: url(../img/hero-area.jpg) no-repeat; */
-    background: url(../img/background/onlybg6.png) no-repeat !important;
+    background: url(../img/background/siht3.png) no-repeat center center;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    height: 100vh; /* Adjust the height as needed */
   }
-  
   #timer{
     font-size: 20px;
     padding-right: 15px;
