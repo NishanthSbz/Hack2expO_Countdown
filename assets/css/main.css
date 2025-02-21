@@ -3452,7 +3452,7 @@ footer {
 ========================================================================== */
 .hero-area-bg {
   /* background: url(../img/hero-area.jpg) no-repeat; */
-  background: url(../img/background/pyexpo25_bg2.png) no-repeat center center;
+  background: url(../img/pyexpo25_bg.webp) no-repeat center center;
   background-size: cover;
   height: 100vh; /* You can adjust this value as needed */
 }
@@ -3484,6 +3484,13 @@ img#nav-logo {
   padding: 400px 21px 200px;
 }
 
+@media (min-height:700px) and (max-height:800px){
+
+  #hero-area .contents {
+      padding: 250px 20px 200px;
+  }
+}
+
 #hero-area .contents .icon {
   margin-bottom: 30px;
 }
@@ -3502,11 +3509,22 @@ img#nav-logo {
   margin-bottom: 20px;
   line-height: 30px;
   color: #fff;
-  margin-top: 37px;
+  margin-top: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* margin-top: 20vh; */
+}
+
+@media (min-height:1500px){
+  #hero-area .contents .banner-info{
+    margin-top: 0vh;
+  }
+
+  #hero-area .contents {
+      padding: 100px 20px 200px;
+  }
 }
 #hero-area .contents .banner-btn {
   margin-top: 35vh;
