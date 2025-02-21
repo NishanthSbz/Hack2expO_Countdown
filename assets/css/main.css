@@ -401,7 +401,7 @@ a.back-to-top:focus {
   margin: 0 auto;
   width: 15%;
   height: 15%;
-  background-color: #0000ff;
+  background-color: crimson;
   border-radius: 100%;
   -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
   animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
@@ -3239,7 +3239,7 @@ footer {
   margin-top: -35px;
   padding: 25px 0;
   position: relative;
-  background-color: #00000096;
+  background-color: #000000;
   border-top: 4px solid #F04935 ;
   border-bottom:  4px solid #F04935 ;
   display: flex;
@@ -3452,9 +3452,9 @@ footer {
 ========================================================================== */
 .hero-area-bg {
   /* background: url(../img/hero-area.jpg) no-repeat; */
-  background: url(../img/background/siht2.png) no-repeat center center;
+  background: url(../img/background/pyexpo25_bg2.png) no-repeat center center;
   background-size: cover;
-  height: 110vh; /* You can adjust this value as needed */
+  height: 100vh; /* You can adjust this value as needed */
 }
 
 #hero-area {
@@ -3481,7 +3481,7 @@ img#nav-logo {
 }
 
 #hero-area .contents {
-  padding: 350px 21px 200px;
+  padding: 400px 21px 200px;
 }
 
 #hero-area .contents .icon {
@@ -3503,6 +3503,10 @@ img#nav-logo {
   line-height: 30px;
   color: #fff;
   margin-top: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #hero-area .contents .banner-btn {
   margin-top: 35vh;
@@ -3533,13 +3537,19 @@ img#nav-logo {
   text-transform: uppercase;
 }
 
+@font-face {
+  font-family: timer;
+  src: url('../fonts/DS-DIGIB.TTF') format('truetype');
+
+}
  /* Style the timer text */
  #timer {
-   font-size: 65px;
+   font-size: 85px;
    color: #fea101;
    /* text-shadow: -1px 0 #000, 0 1px #fff, 1px 0 #fff, 0 -1px #000; */
    margin: 0 0 0 20px;   
-   font-family:'digital-clock-font';
+   /* font-family:'digital-clock-font'; */
+   font-family: 'timer', sans-serif;
    font-variant-caps:small-caps;
     font-weight:600;
     display: flex;
@@ -3548,7 +3558,7 @@ img#nav-logo {
  }
  /* Style for the button */
  #startTimerButton {
-  background-color: #2B72AD; /* Green */
+  background-color: #7133FF ; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -3565,8 +3575,8 @@ img#nav-logo {
 
 /* Style for the button on hover */
 #startTimerButton:hover {
-  background-color: #2B72AD;
-  color: #000; /* Darker Green */
+  background-color: #7133FF ;
+   /* Darker Green */
 }
  /* Style for the disabled button */
  #startTimerButton[disabled] {

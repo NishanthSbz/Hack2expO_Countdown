@@ -123,9 +123,9 @@
               </div>
                -->
               <p class="banner-info">
-                <span style="color: #F04935; font-size:48px;font-weight: bolder;font-family: 'Lugrasimo', cursive;
-                font-weight: 400;
-                font-style: normal;    line-height: normal;">SIH THIRUVIZHA</span> <span id="countdown-text"
+                <span style="color: #F04935; font-size:48px;font-weight: bolder;font-family: 'Orbitron', cursive;
+                font-weight: 800;
+                font-style: normal;    line-height: normal;">PYEXPO '25</span> <span id="countdown-text"
                   style="font-size: xx-large;color: #000;"></span>
                 <!--on 13<sup> th</sup> March @ 9 AM || ends on 14 <sup>th</sup> March @ 3 PM... -->
               </p>
@@ -155,7 +155,13 @@
                   // Display the timer in the #timer div
                   var timerElement = document.getElementById('timer');
                   if (distance >= 0) {
-                    timerElement.innerHTML = hours + ' hours  ' + minutes + ' mins  ' + seconds + ' sec ';
+                    timerElement.innerHTML = `
+                <span style="color: white; font-weight: bold; margin-right: 10px;">${hours}</span>
+                <span style="color: #fea101; margin-right: 20px; font-family:'orbitron',san-serif; font-size:65px !important;">hours</span>  
+                <span style="color: white; font-weight: bold; margin-right: 10px;">${minutes}</span>
+                <span style="color: #fea101; margin-right: 20px;font-family:'orbitron',san-serif; font-size:65px !important;">mins</span>  
+                <span style="color: crimson; font-weight: bold; margin-right: 10px;">${seconds}</span>
+                <span style="color: white;font-family:'orbitron',san-serif; font-size:65px !important;">sec</span>`;
                   } else {
                     clearInterval(x);
                     timerElement.innerHTML = " Times Up! HACK2EXPO Ended Successfully.";
@@ -180,8 +186,8 @@
       <section id="count">
         <div class="count-wrapper text-center">
           <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
-            <div id="timer" style="font-family:'Orbitron', sans-serif;"><span
-                style="font-size: 35px;color: #fea101;">Click the start button to begin the hackathon</span></div>
+            <div id="timer"><span
+                style="font-size: 45px;color: #fea101; font-family: 'orbitron',sans-serif; letter-spacing: 4.5px;">Click the start button to begin the hackathon</span></div>
 
           </div>
         </div>
